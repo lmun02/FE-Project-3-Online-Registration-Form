@@ -1,0 +1,164 @@
+/*===Base Elements===*/
+        /*Web Fonts--*/
+        @font-face { /*embeded downlowded font files*/
+            src: url(fonts/Cuprum-Regular.ttf);
+            font-family: "Cuprum"
+            }  
+
+        *{
+            box-sizing: border-box;
+        }
+
+/*===Base Layout Styles===*/
+        body{
+            font-family: Cuprum, sans-serif;
+        }
+
+    /*--Top Banner --*/
+        .banner {
+            background-color:darkslategray;
+            display:flex;
+            height: 70px;
+            align-items:center; /*This aligns text in the center of cross-axis*/
+            justify-content:center; /*This aligns the text in the middle of main-axis*/
+        }
+
+        .banner-name {
+            text-transform:uppercase;
+            color:white;
+            font-size: 1.2em;  
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+    /*--Layout Containers--*/
+        .signup-bio {
+            text-align:center;
+        }
+
+        .bio {
+            color: gray;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        fieldset {
+            border-style: none; /*This takes away the border lines from each fieldset*/
+            padding: 5px;
+            display: flex;
+            margin-bottom: 15px;
+        }
+   
+
+    /*---Fieldset Layouts---*/
+
+        /*<Div> Personal Info*/
+            h2 { /*All h2 Headings*/
+                margin-top:10px;
+                margin-bottom: 10px;
+            }
+
+            h2.contact-info {
+                font-weight: bold;
+            }
+
+            label { /*Labels for inputs, checkboxes and radios*/
+                padding-top: 5px;
+                padding-bottom: 15px; /*Gives padding bottom to all labels*/
+                display:inline-block;   /*Allows for label to be in line */
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            textarea,
+            select {  
+                border:none;
+                margin:0;
+                padding: 15px; /*The size of the input boxes*/
+                width: 100%;
+                background-color:lightgray;
+                color: black;
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
+        
+            input[type="text"]::placeholder,
+            input[type="email"]::placeholder {
+                text-align:right;
+                font-style: italic;
+            }
+
+            select { /*State drop down scroll*/
+                padding: 6px;
+                height: 50px;
+                border-radius: 2px;
+                color:lightslategray;
+            }
+
+        /*<Div> Newsletter Info*/
+            textarea {
+                padding-bottom:25px;
+            }
+
+            button { /*Sign Up Button*/
+                padding: 15px;
+                color:white;
+                background-color:#52bab3;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 1em;
+                border-radius:5px;
+                border-style:none;
+                width: 100%;
+                margin-top:20px;
+            
+            }
+
+            footer { /*Copyright Text*/
+                text-align:center;
+                font-size: .75em;
+                font-weight: lighter;
+                font-style:italic;
+                color: gray;
+            }
+
+    /*---Structural Pseudo-Classes---*/
+        input:nth-of-type(6) { /*The 6th input of the parent element will be only 50% wide. */
+            width: 50%;
+            display: block; /*Targeting the 6th input and making it Block*/
+        }
+
+
+    /*--Page Elements--*/
+
+        hr { /*This is for the horizontal line on webpage*/
+            display:block;
+            overflow: hidden;
+            color: black;
+            border-style: solid;
+            border-width: 1px; 
+            margin-top: 5px;
+            }
+
+        hr.tophr {
+            border-width: 2px;
+            }
+
+        option[value=""][disabled]{ /*This allows for the placeholder in 'select' box to not display- note added to HTML. */
+            display:none;
+            }
+
+    /*--UI Element States Pseudo Classes*/
+        input:focus,
+        textarea:focus {
+            border:solid 3px pink;
+        }
+
+        input[type="checkbox"]:checked + label, /*This allows for text and check to become bold when selected*/
+        input[type="radio"]:checked +label {
+            font-weight:bold;    
+            
+        }
+
+/*===Media Queries===*/

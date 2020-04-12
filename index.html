@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration Project 3</title>
+    <link href="CSS/styles.css" rel="stylesheet"> 
+    <link  href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form action="index.html" method="post">
+    <header>
+        <div class="banner">
+            <h1 class="banner-name">The Code Review</h1>
+        </div> 
+        
+        <div class="signup-bio">
+            <h2 class="signup-heading">Signup for our newsletter</h2>
+            <p class="bio">Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+    </header>
+
+    <hr class="tophr">
+    <hr>
+    <main>
+        <fieldset>
+            <div class="personal-info">
+            <legend><h2 class="contact-info">Contact Information</h2></legend>
+                <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user_name" placeholder="Required">
+
+                <label for="mail">Email Adress</label>
+                    <input type="email" id="mail" name="user_email" placeholder="Required">
+
+                <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user_phone">
+
+                <label for="address">Street Address</label>
+                    <input type="text" id="adress" name="user_address">
+
+                <label for="city">City</label>
+                    <input type="text" id="city" name="user_city">
+
+                <label for="states">State</label>
+                    <select id="states" name="user_state" >
+                        <option value="" disabled selected>Choose State</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Coloarado</option>
+                        <option value="FL">Florida</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="NV">Nevada</option>
+                        <option value="OR">Oregon</option>
+                        <option value="NY">New York</option>
+                        <option value="TX">Texas</option>
+                        <option value="WA">Washington</option>                       
+                    </select>
+
+                <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user_zipcode">
+            </div>
+        </fieldset>
+
+    <hr>
+
+        <fieldset>
+            <div class="newsletter-info">
+            <legend><h2 class="newsletter">Newsletter</h2></legend>
+                <label>Select the newsletters you would like to receive</label><br>
+                    <input type="checkbox" id="HTML" value="html_newsletter" name="user_newsletter"><label for="HTML">HTML News</label><br>
+                    <input type="checkbox" id="CSS" value="css_newsletter" name="user_newsletter"> <label for="CSS">CSS News</label><br>
+                    <input type="checkbox" id="Javascript" value="java_newsletter" name="user_newsletter"> <label for="Javascript">Javascript News</label><br>
+                    
+                    <label>Newsletter format</label><br>
+                    <input type="radio" id="html" value="html_format" name="user_format"> <label for="html">HTML</label><br>
+                    <input type="radio" id="plain" value="plain_format" name="user_format"> <label for="plain">Plain Text</label><br>
+
+                <label for="othertopics">Other topics you'd like to hear about</label>
+                <textarea id="othertopics" name="user_othertopics"></textarea>
+
+
+            <button type="submit">Sign Up</button>
+
+            </main>
+
+            <footer>
+                <p>Copyright The Code Review</p>
+            </footer>
+            </div>
+        </fieldset> 
+    </form>
+</body>
+</html>
