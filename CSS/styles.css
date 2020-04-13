@@ -158,7 +158,7 @@
             display:none;
             }
 
-    /*--UI Element States Pseudo Classes*/
+    /*--UI Element States Pseudo Classes--*/
         input:focus,
         textarea:focus {
             border:solid 3px red;
@@ -179,5 +179,33 @@
             justify-content:center;   /*This aligns the text in the center like the mockup*/
         }
 
+        .banner {
+            width: 100%;
+        }
 
+        input[type="text"],      /*This puts the input boxes in a right float and 70% wide*/
+        input[type="email"],
+        input[type="tel"],
+        select {  
+            width: 70%;
+            float: right;
+            height:40px;
+        }
+
+        input[id="zip"] {      /*Targets the input with the "zip id" */
+            width: 40%;
+            margin-right:120px;
+        }
+         
+        label[for="name"],          /*This targets the labels of these "for" attributes*/
+        label[for="mail"],
+        label[for="phone"],
+        label[for="address"],
+        label[for="city"],
+        label[for="states"],
+        label[for="zip"] {
+            padding-bottom: 40px;
+        }
+        
+        
     }
