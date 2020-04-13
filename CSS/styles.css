@@ -15,6 +15,7 @@
         }
         body{
             font-family: Cuprum, sans-serif;
+            margin:0;
         }
 
     /*--Top Banner --*/
@@ -173,12 +174,11 @@
 
 /*===Media Queries===*/
     @media (min-width: 768px) {
-        head,
-        body {
-            display:flex;
-            justify-content:center;   /*This aligns the text in the center like the mockup*/
+        form {
+            max-width: 600px;
+            margin:auto;
         }
-
+        
         .banner {
             width: 100%;
         }
@@ -194,7 +194,7 @@
 
         input[id="zip"] {      /*Targets the input with the "zip id" */
             width: 40%;
-            margin-right:120px;
+            margin-right:178px;
         }
          
         label[for="name"],          /*This targets the labels of these "for" attributes*/
@@ -206,6 +206,4 @@
         label[for="zip"] {
             padding-bottom: 40px;
         }
-        
-        
     }
