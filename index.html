@@ -24,24 +24,29 @@
     <hr class="tophr">
     <hr>
     <main>
-        <fieldset>
-            <div class="personal-info">
+        <fieldset class="container">          
             <legend><h2 class="contact-info">Contact Information</h2></legend>
+                <div class="item-1">
                 <label for="name">Full Name</label>
                     <input type="text" id="name" name="user_name" placeholder="Required">
-
-                <label for="mail">Email Adress</label>
+                </div>
+                <div class="item-2">
+                <label for="mail">Email Address</label>
                     <input type="email" id="mail" name="user_email" placeholder="Required">
-
+                </div>
+                <div class="item-3">
                 <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" name="user_phone">
-
+                </div>
+                <div class="item-4">
                 <label for="address">Street Address</label>
-                    <input type="text" id="adress" name="user_address">
-
+                    <input type="text" id="address" name="user_address">
+                </div>
+                <div class="item-5">
                 <label for="city">City</label>
                     <input type="text" id="city" name="user_city">
-
+                </div>
+                <div class="item-6">
                 <label for="states">State</label>
                     <select id="states" name="user_state" >
                         <option value="" disabled selected>Choose State</option>
@@ -56,22 +61,22 @@
                         <option value="TX">Texas</option>
                         <option value="WA">Washington</option>                       
                     </select>
-
+                </div>
+                <div class="item-7">
                 <label for="zip">Zip Code</label>
                     <input type="text" id="zip" name="user_zipcode">
-            </div>
+                </div>         
         </fieldset>
 
     <hr>
 
-        <fieldset>
-            <div class="newsletter-info">
+        <fieldset class="container2">            
             <legend><h2 class="newsletter">Newsletter</h2></legend>
+            <div class="newsletter-info">
                 <label>Select the newsletters you would like to receive</label><br>
                     <input type="checkbox" id="HTML" value="html_newsletter" name="user_newsletter"><label for="HTML">HTML News</label><br>
                     <input type="checkbox" id="CSS" value="css_newsletter" name="user_newsletter"> <label for="CSS">CSS News</label><br>
                     <input type="checkbox" id="Javascript" value="java_newsletter" name="user_newsletter"> <label for="Javascript">Javascript News</label><br>
-                    
                     <label>Newsletter format</label><br>
                     <input type="radio" id="html" value="html_format" name="user_format"> <label for="html">HTML</label><br>
                     <input type="radio" id="plain" value="plain_format" name="user_format"> <label for="plain">Plain Text</label><br>
@@ -79,16 +84,14 @@
                 <label for="othertopics">Other topics you'd like to hear about</label>
                 <textarea id="othertopics" name="user_othertopics"></textarea>
 
-
             <button type="submit">Sign Up</button>
-
-            </main>
-
+   
             <footer>
                 <p>Copyright The Code Review</p>
             </footer>
             </div>
         </fieldset> 
+    </main>
     </form>
 </body>
 </html>
